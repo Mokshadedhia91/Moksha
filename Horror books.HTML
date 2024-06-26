@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>Thriller books</title>
+<style>  
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+nav a {
+   text-decoration:none;
+   color:red;
+   padding: 10px;
+}
+nav a:hover {
+   color: #333;
+}
+
+section{
+background-image:url("horror.jpg");
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.book {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+}
+
+.book-info {
+    padding: 0px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bookbutton:hover{
+            background-color: #333;
+}
+
+</style>
+</head>
+<body>
+<header>
+    <nav>
+     <a href="index.html">Home</a>
+    </nav>
+</header>
+<section>
+
+<main id="book-list">
+<div class="book">
+  <img src="book15.jpg" alt="Book 15">
+            <div class="book-info">
+                <h2>Hind and Dont Seek</h2>
+                <p>By Anica Rissi</p>
+                <p>A school talent-show act leaves the audience aghast… And a summer at camp takes a turn for the braaaains… </p>
+              <a href="buy now.html">Buy Now</a>
+              <h3>Rs.199</h3>M.R.P.:<del>399</del>
+            </div>
+        </div>
+
+<div class="book">
+            <img src="book 16.jpg" alt="Book 16">
+            <div class="book-info">
+                <h2>The Girl in the Locked Room</h2>
+                <p>by Mary Hahn</p>
+                <p>A mystery about a woman whose flesh is burned by light is confined to a dark box of a room. </p>
+              <a href="buy now.html">Buy Now</a>
+              <h3>Rs.145</h3>M.R.P.:<del>200</del>
+               </div>
+        </div>
+
+<div class="book">
+            <img src="book16.jpg" alt="Book 17">
+            <div class="book-info">
+                <h2>Pet Sematary</h2>
+                <p>by Stephen King</p>
+                <p>After tragedy strikes, a grieving father discovers an ancient burial ground behind his home with the power to raise the dead.</p>
+              <a href="buy now.html">Buy Now</a>
+              <h3>Rs.275</h3>M.R.P.:<del>350</del>
+               </div>
+        </div>
+
+<div class="book">
+            <img src="book17.jpg" alt="Book 17">
+            <div class="book-info">
+                <h2>The Psycho</h2>
+                <p>by Robert Bloch</p>
+                <p>The novel tells the story of Norman Bates, a caretaker at an isolated motel who struggles under his domineering mother and becomes embroiled in a series of murders.</p>
+              <a href="buy now.html">Buy Now</a>
+              <h3>Rs.300</h3>M.R.P.:<del>350</del>
+               </div>
+        </div>
+
+<div class="book">
+            <img src="book18.jpg" alt="Book 18">
+            <div class="book-info">
+                <h2>Black Forest</h2>
+                <p>by Blane Lee</p>
+                <p>This novel covers the lives of a number of families tracing their history from the Saxons and Normans in 1099 through a "Jane Austen" style world of the early 19th century to present.</p>
+              <a href="buy now.html">Buy Now</a>
+              <h3>Rs.260</h3>M.R.P.:<del>350</del>
+               </div>
+        </div>
+</main>
+

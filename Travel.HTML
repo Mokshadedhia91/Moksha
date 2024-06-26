@@ -1,0 +1,210 @@
+<html>
+<head>
+<title>Book Collection</title>
+<style>  
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+nav a {
+   text-decoration:none;
+   color:brown;
+   padding: 10px;
+}
+nav a:hover {
+   color: #333;
+}
+
+section{
+background-image:url("bookbg.jpg");
+background-repeat: no-repeated;
+background-size: cover;
+border:1px solid;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.book {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+}
+
+.book-info {
+    padding: 0px;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bookbutton:hover{
+            background-color: #333;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Reader's Den</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+<section>
+<main id="book-list">
+
+<div class="book">
+     <img src="book19.jpg" alt="Book 19">
+     <div class="book-info">
+     <h2>Destinations of a Lifetime</h2>
+     <p>by National Geographic Society</p>
+     <p>NatGeo takes you on a photographic tour of the world's most spectacular destinations, inspiring tangible ideas for your next trip.</p>
+     <a href="buy now.html">Buy Now</a>
+       <h3>Rs.276</h3>M.R.P.:<del>350</del>
+     </div>
+</div>
+
+<div class="book">
+     <img src="book10.jpg" alt="Book 10">
+     <div class="book-info">
+     <h2>Where To Go When</h2>
+     <p>by Sarah Baxter</p>
+     <p>An 'Ultimate trip planner' - discover the best places to visit throughout the seasons. </p>
+     <a href="buy now.html">Buy Now</a>
+       <h3>Rs.300</h3>M.R.P.:<del>420</del>
+   </div>
+</div>
+
+<div class="book">
+     <img src="book21.jpg" alt="Book 20">
+     <div class="book-info">
+     <h2>The Rings of Saturn</h2>
+     <p>by W.G.Sebald</p>
+    <p>Book most simply described as an account of a walking tour the author took some years ago in the English county of East Anglia</p>
+    <a href="buy now.html">Buy Now</a>
+       <h3>Rs.199</h3>M.R.P.:<del>225</del>
+    </div>
+</div>
+
+<div class="book">
+     <img src="book20.jpg" alt="Book 21">
+     <div class="book-info">
+     <h2>The Art of Travel</h2>
+     <p>by Alain de Botton</p>
+    <p>“The Art of Travel” serves as a reminder of the how and why when it comes to hitting the road, said Michelle Halpern, travel blogger at Live Like It’s The Weekend.</p>
+    <a href="buy now.html">Buy Now</a>
+       <h3>Rs.360</h3>M.R.P.:<del>450</del>
+    </div>
+</div>
+
+<div class="book">
+     <img src="book23.jpg" alt="Book 23">
+     <div class="book-info">
+     <h2>The Seven Moons of Maali Almeida</h2>
+     <p>by Shehan Karunatilaka</p>
+    <p>The central character, Maali Almeida, is a dead photographer who sets out to solve the mystery of his own death and is given one week ("seven moons") during which he can travel between the afterlife and the real world.</p>
+    <a href="buy now.html">Buy Now</a>
+       <h3>Rs.310</h3>M.R.P.:<del>435</del>
+    </div>
+</div>
+
+<div class="book">
+     <img src="book24.jpg" alt="Book 24">
+     <div class="book-info">
+     <h2>You Only Live Once</h2>
+     <p>by Stuti Changle</p>
+    <p>This story is a beautiful journey of three people who discover themselves at the end after days of struggle and gloom.</p>
+    <a href="buy now.html">Buy Now</a>
+       <h3>Rs.286</h3>M.R.P.:<del>325</del>
+    </div>
+</div>
+
+</main>
+
+<div class="modal" id="book-details-modal">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-author"></p>
+    <p id="modal-description"></p>
+    </div>
+</div>
+</section>
+</body>
+</html>
+

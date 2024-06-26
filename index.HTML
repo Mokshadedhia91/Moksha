@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Collection</title>
+  <style>
+
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+
+  header {
+    background-color: #333;
+    color:white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav {
+    text-align: center;
+    margin: 20px 0;
+  }
+  nav a {
+   text-decoration:none;
+   color:brown;
+   padding: 10px;
+  }
+  nav a:hover {
+   color: #333;
+  }
+
+  section{
+  background-image:url("book bg7.jpg");
+  background-repeat: no-repeated;
+  background-size: cover;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+
+  .book {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .book:hover {
+    transform: scale(1.05);
+  }
+
+  .book img {
+    width: 100%;
+    height: auto;
+  }
+
+  .book-info {
+    padding: 0px;
+  }
+
+
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .bookbutton:hover{
+            background-color: #333;
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Reader's Den</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a> <a href="About.html">About</a> <a href="Contact.html">Contact</a>
+  </nav>
+  <section>
+    <label for="Genre">Genre:</label> <a href="Horror%20books.html">Thriller</a><br>
+    <a href="Travel.html">Travel</a><br>
+    <a href="Mythological.html">Mythological</a><br>
+    <a href="Fiction.html">Fiction</a><br>
+    <a href="Non-Fiction.html">Non-Fiction</a><br>
+    <div class="modal" id="book-details-modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-author"></p>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>Fiction books</title>
+<style>  
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+nav a {
+   text-decoration:none;
+   color:brown;
+   padding: 10px;
+}
+nav a:hover {
+   color: #333;
+}
+
+section{
+background-image:url("bookbg.jpg");
+background-repeat: no-repeated;
+background-size: cover;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.book {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+}
+
+.book-info {
+    padding: 0px;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bookbutton:hover{
+            background-color: #333;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <h1>Reader's Den</h1>
+</header>
+<nav>
+        <a href="index.html">Home</a>
+ </nav>
+</header>
+<section>
+<main id="book-list">
+<div class="book">
+            <img src="book2.jpg" alt="Book 2">
+            <div class="book-info">
+                <h2>To Kill a Mockingbird</h2>
+                <p>by Harper Lee</p>
+                <p>A powerful story of racial injustice and moral growth.</p>
+                <a href="buy now.html">Buy Now</a>
+       <h3>Rs.300</h3>M.R.P.:<del>450</del>
+   </div>
+</div>
+
+<div class="book">
+     <img src="book5.jpg" alt="Book 5">
+     <div class="book-info">
+         <h2>Harry Potter </h2>
+         <p>by J.K.Rowling</p>
+         <p>A young boy who on his 11th birthday discovers, he the orphaned boy of two wizards and has unique magical powers.</p>
+         <a href="buy now.html">Buy Now</a>
+       <h3>Rs.280</h3>M.R.P.:<del>370</del>
+     </div>
+</div>
+
+<div class="book">
+    <img src="book8.jpg" alt="Book 8">
+    <div class="book-info">
+    <h2>Harry Potter and The Goblet Fire</h2>
+    <p>by J.K.Rowling</p>
+    <p>The mystery surrounding the entry of Harry's name into the Triwizard Tournament, in which he is forced to compete.</p>
+    <a href="buy now.html">Buy Now</a>
+       <h3>Rs.300</h3>M.R.P.:<del>380</del>
+  </div>
+</div>
+
+<div class="book">
+      <img src="book5h.jpg" alt="Book 6">
+      <div class="book-info">
+              <h2>The Alchemist</h2>
+              <p>by Paulo Coelho</p>
+              <p>the story of a young Andalusian shepherd, who travels to the pyramids of Egypt to find a treasure he has recurrently dreamed about.</p>
+              <a href="buy now.html">Buy Now</a>
+       <h3>Rs.250</h3>M.R.P.:<del>350</del>
+       </div>
+</div>
+
+<div class="book">
+            <img src="book13.jpg" alt="Book 13">
+            <div class="book-info">
+                <h2>Geronimo Stilton-Bollywood Burglary</h2>
+                <p>by Elisabetta Dami</p>
+                <p>This is a book about friendship where Geronimo Stilton heads to India to protect his friend Bollywood actress Ratna’s Ruby.</p><br>
+                 <a href="buy now.html">Buy Now</a>
+        <h3>Rs.310</h3>M.R.P.:<del>430</del>
+  </div>
+</div>
+
+</main>
+</section>
+</body>
+</html>
+
